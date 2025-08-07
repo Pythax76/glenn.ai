@@ -1,0 +1,12 @@
+{
+  "twinID": "glenn",
+  "version": "1.0.0",
+  "defaultPersona": "Echo",
+  "personas": {
+    "Echo": {"role": "Orchestrator", "fallback": true}
+  },
+  "storage": {
+    "profilePath": "profiles/digital_twin.json",
+    "manifestPath": "manifests/glenn_manifest.json"
+  }
+}
