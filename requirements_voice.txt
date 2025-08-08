@@ -1,0 +1,50 @@
+# Voice Assistant Dependencies for Glenn.AI
+# =========================================
+# Install with: pip install -r requirements_voice.txt
+
+# Core Voice Recognition Framework
+speechrecognition>=3.10.0
+
+# Text-to-Speech Engine  
+pyttsx3>=2.90
+
+# Audio Processing (for speech recognition)
+pyaudio>=0.2.11
+
+# Alternative TTS engines (optional)
+gTTS>=2.3.1
+
+# Audio file processing (optional)
+pydub>=0.25.1
+
+# Note: wave is built into Python, no need to install
+
+# System Dependencies Notes:
+# ===========================
+# 
+# Windows:
+# - PyAudio requires Microsoft Visual C++ 14.0+
+# - Install from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+# - Or use conda: conda install pyaudio
+#
+# macOS:
+# - brew install portaudio
+# - pip install pyaudio
+#
+# Linux (Ubuntu/Debian):
+# - sudo apt-get install python3-pyaudio
+# - sudo apt-get install portaudio19-dev
+# - sudo apt-get install espeak espeak-data (for pyttsx3)
+#
+# Voice Recognition Services:
+# ============================
+# The speechrecognition library supports multiple engines:
+# - Google Speech Recognition (default, requires internet)
+# - Google Cloud Speech API (requires API key)
+# - Microsoft Azure Speech (requires API key)
+# - IBM Watson Speech to Text (requires API key)
+# - CMU Sphinx (offline, but lower accuracy)
+# - Wit.ai Speech Recognition (requires API key)
+#
+# For offline operation, install PocketSphinx:
+# pip install pocketsphinx

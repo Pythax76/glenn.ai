@@ -56,6 +56,9 @@ def main():
     # Awareness command  
     awareness_parser = subparsers.add_parser('awareness', help='Self-awareness and identity check')
     
+    # Voice command
+    voice_parser = subparsers.add_parser('voice', help='Voice assistant shell')
+    
     # Parse arguments
     args = parser.parse_args()
     
@@ -88,6 +91,9 @@ def main():
         elif args.command == 'awareness':
             from commands import awareness
             awareness.execute(args)
+        elif args.command == 'voice':
+            from commands import voice
+            voice.execute(args)
         else:
             print(f"Unknown command: {args.command}")
             
